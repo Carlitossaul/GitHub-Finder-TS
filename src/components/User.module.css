@@ -1,0 +1,69 @@
+.user {
+  background-color: #8da52d;
+  width: 25em;
+  padding: 1.5em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.user h2 {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+}
+
+.user img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border: 4px solid #576d4a;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.location svg {
+  fill: #247183;
+  font-size: 1.5em;
+}
+
+.location span {
+  color: #ddd;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats div {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+}
+.stats div:first-child {
+  border-right: 1px solid #247183;
+}
+
+.stats .number {
+  background-color: #576d4a;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.user a {
+  text-align: center;
+  background-color: #247183;
+  padding: 1em;
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.user a:hover {
+  opacity: 1;
+}

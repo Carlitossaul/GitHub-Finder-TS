@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 1em;
-  background-color: #b5d43b;
+  background-color: #8da52d;
   padding: 1.5em;
   border-radius: 10px;
   margin-bottom: 1.5em;
@@ -33,4 +33,5 @@ button {
 .searchContainer button {
   background-color: #434738;
   cursor: pointer;
+  align-items: center;
 }

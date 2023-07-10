@@ -1,0 +1,80 @@
+.repos {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
+.repoContainer {
+  min-height: 6em;
+  border-radius: 6px;
+  padding: 10px;
+  width: 35em;
+  background-color: #8da52d;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.description {
+  font-size: 12px;
+  color: #434738;
+  text-shadow: none;
+}
+.data {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+.data h2 {
+  font-size: 22px;
+  text-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
+}
+
+.data p {
+  font-size: 10px;
+  border-radius: 20px;
+  background-color: #247183;
+  padding: 3px 5px;
+}
+
+.subData {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.subData p {
+  color: #434738;
+  text-shadow: none;
+  font-size: 12px;
+}
+.subData h4 {
+  text-shadow: 0 2px 4px rgb(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.starts {
+  display: flex;
+  gap: 4px;
+}
+
+.starts svg {
+  color: yellow;
+}
+
+.back {
+  position: absolute;
+  top: 3em;
+  left: 1em;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.back:hover {
+  background-color: #252525;
+  color: #fff;
+}

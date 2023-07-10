@@ -1,14 +1,27 @@
-import Search from "../components/Search";
-import { useState } from "react";
 import { UserProps } from "../types/user";
+import { useState } from "react";
+
+import Search from "../components/Search";
+import User from "../components/User";
+import Error from "../components/Error";
 
 const Home = () => {
   const [user, setUser] = useState<UserProps | null>(null);
+  const [error, setError] = useState(false);
 
   const loadUser = async (userName: string) => {
     const res = await fetch(`https://api.github.com/users/${userName}`);
+    setError(false);
+    setUser(null);
 
     const data = await res.json();
+
+    console.log(data.repos_url);
+
+    if (res.status === 404) {
+      setError(true);
+      return;
+    }
 
     const { avatar_url, login, location, followers, following } = data;
 
@@ -26,7 +39,8 @@ const Home = () => {
   return (
     <div>
       <Search loadUser={loadUser} />
-      {user && <p>{user.login}</p>}
+      {user && <User {...user} />}
+      {error && <Error />}
     </div>
   );
 };
