@@ -4,10 +4,10 @@
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-family: "Inter", sans-serif;
-  color: #fff;
+  color: #f7f7f7;
 }
 body {
-  background-color: #0e1129;
+  background-color: #434738;
   padding: 2rem;
 }
 p {
@@ -16,3 +16,7 @@ p {
 a {
   text-decoration: none;
 }
+/* 
+#a5dbdd
+#d3e1e2
+ */
