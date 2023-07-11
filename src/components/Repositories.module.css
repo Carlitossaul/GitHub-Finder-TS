@@ -78,3 +78,25 @@
   background-color: #252525;
   color: #fff;
 }
+
+@media (max-width: 391px) {
+  .repos {
+    width: 95%;
+  }
+  .subData {
+    width: 95%;
+  }
+  .data {
+    width: 95%;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
+}

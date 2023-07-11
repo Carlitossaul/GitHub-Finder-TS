@@ -67,3 +67,19 @@
 .user a:hover {
   opacity: 1;
 }
+
+@media (max-width: 391px) {
+  .user {
+    width: 95%;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
+}

@@ -35,3 +35,20 @@ button {
   cursor: pointer;
   align-items: center;
 }
+
+@media (max-width: 391px) {
+  .search {
+    width: 95%;
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
+}

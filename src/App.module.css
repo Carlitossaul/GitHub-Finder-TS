@@ -4,4 +4,29 @@
   align-items: center;
   flex-direction: column;
   gap: 1em;
+  position: relative;
+  padding: 2em;
+}
+
+.logo {
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+@media (max-width: 391px) {
+  .container {
+    padding-top: 4em;
+  }
+}
+@media (min-width: 391px) and (max-width: 768px) {
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Estilos para pantallas con ancho entre 768px y 992px */
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas con ancho mínimo de 992px */
 }
