@@ -37,6 +37,7 @@ const Repositories = () => {
       <button className={styles.back} onClick={() => navigate("/")}>
         Back!
       </button>
+      <h1>Repositories</h1>
       {data &&
         data.map((repo) => (
           <div className={styles.repoContainer} key={repo.name}>

@@ -69,10 +69,10 @@
 
 .back {
   position: absolute;
-  top: 3em;
-  left: 1em;
+  top: 6em;
+  left: 2em;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .back:hover {
   background-color: #252525;
@@ -80,14 +80,43 @@
 }
 
 @media (max-width: 391px) {
-  .repos {
-    width: 95%;
+  .repos h1 {
+    font-size: 20px;
   }
-  .subData {
-    width: 95%;
+  .repoContainer {
+    min-height: 8em;
+    width: 100%;
   }
   .data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
     width: 95%;
+  }
+  .data h2 {
+    font-size: 16px;
+  }
+
+  .data p {
+    font-size: 9px;
+    padding: 1px 3px;
+  }
+
+  .subData p {
+    font-size: 10px;
+  }
+  .subData h4 {
+    font-size: 12px;
+  }
+  .starts {
+    font-size: 12px;
+  }
+
+  .back {
+    position: fixed;
+    top: 8em;
+    left: 2em;
   }
 }
 @media (min-width: 391px) and (max-width: 768px) {
